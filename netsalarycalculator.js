@@ -4,7 +4,7 @@ function netSalaryCalculator(basicSal, benefits = 0) {
     const grossSalary = basicSal + benefits;
 
     // displaying the gross salary value
-    console.log("Gross Salary: " + grossSalary);
+    console.log("Gross Salary: " + "Ksh. " + grossSalary);
 
 
 
@@ -23,7 +23,7 @@ function netSalaryCalculator(basicSal, benefits = 0) {
         paye = grossSalary * 0.3;
     }
     // displaying the PAYE deduction value
-    console.log("PAYE: " + paye);
+    console.log("PAYE: " + "Ksh. " + paye);
 
     // NHIF Deductions
 
@@ -83,7 +83,7 @@ function netSalaryCalculator(basicSal, benefits = 0) {
     }
 
     // displaying the NHIF deduction value
-    console.log("NHIF: " + nhif);
+    console.log("NHIF: " + "Ksh. " + nhif);
 
 
     // NSSF Deductions
@@ -98,7 +98,7 @@ function netSalaryCalculator(basicSal, benefits = 0) {
     }
 
     // displaying the NSSF deduction value
-    console.log("NSSF: " + nssf)
+    console.log("NSSF: " + "Ksh. " + nssf)
 
 
     // End of Deductions
@@ -110,15 +110,15 @@ function netSalaryCalculator(basicSal, benefits = 0) {
     const deductions = nssf + nhif + paye;
 
     // displaying the total amount of deductions
-    console.log("Total deductions: " + deductions);
+    console.log("Total deductions: " + "Ksh. " + deductions);
 
 
     // net salary calculation
     const netSalary = grossSalary - deductions;
 
     // displaying the net salary value
-    return console.log(`Your Net Salary: ${netSalary}`);
+    return console.log(`Your Net Salary: Ksh. ${netSalary}`);
 
 }
 
-console.log(netSalaryCalculator(70000))
+console.log(netSalaryCalculator(1000))
