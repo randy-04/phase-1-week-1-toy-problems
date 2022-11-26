@@ -29,7 +29,11 @@ function netSalaryCalculator(basicSal, benefits = 0) {
 
     // declaring nhif variable with let because it is subject to change and to avoid declaration in each if statement
     // deductions are done on the gross salary
+
     let nhif;
+
+    // I used if else statements despite being tedious because they are processedway faster than switch statements. 
+    // Switch statements can use up up to 10 times more processing time because they have to be run twice or more per evaluation.
     if (grossSalary < 6000) {
         nhif = 150;
     }
